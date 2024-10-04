@@ -1,0 +1,28 @@
+body{
+	margin:8px 20px;
+	font-family:Courier;
+}
+a{
+	cursor:pointer;
+	color:#2222aa;
+	text-decoration:none;
+}
+h1{
+	font-family:Georgia;
+	margin-left:-20px;
+	background-color:#dedede;
+	padding:18px;
+}
+pre{
+	border:1px solid #999999;
+	padding:4px;
+	max-width:400px;
+}
+#voltar{
+	background-color:#dedede;
+	position:fixed;
+	bottom:0px;
+	right:20px;
+	padding:18px;
+	cursor:pointer;
+}
