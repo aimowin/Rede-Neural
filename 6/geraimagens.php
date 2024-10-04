@@ -1,0 +1,19 @@
+<?php
+ for($x=0;$x<100;$x++){
+	$im=imagecreate(30,30);
+	imagecolorallocate($im,255,255,255);
+	imagefilledellipse($im,7+(rand()%16),7+(rand()%16),15,15,imagecolorallocate($im,0,0,0));
+	imagebmp($im,"amostra".($x).".bmp");
+	imagedestroy($im);
+}
+ for($x=0;$x<100;$x++){
+	$im=imagecreate(30,30);
+	imagecolorallocate($im,255,255,255);
+	$cx=(rand()%16);
+	$cy=(rand()%16);
+	imagefilledrectangle($im,$cx+2,$cy+2,$cx+15,$cy+15,imagecolorallocate($im,0,0,0));
+	imagebmp($im,"amostra".(100+$x).".bmp");
+	imagedestroy($im);
+}
+echo "imgs geradas";
+?>
