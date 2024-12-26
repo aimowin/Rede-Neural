@@ -22,7 +22,7 @@ main(){
 	//inicializa o weight com um valor aleatorio
 	float weight=((float)rand()/(float)(RAND_MAX))/1.0; //valor entre 0 e 1
 
-	for(int x=0;x<1000;x++){
+	for(int x=0;x<10000;x++){
 		int alguma=rand()%50; //escolhe uma amostra qualquer da amostra
 
 		//printf("%d) [%c] %f\n",alguma,amostra[alguma].especie,amostra[alguma].peso);

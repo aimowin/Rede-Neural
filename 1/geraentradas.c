@@ -13,7 +13,7 @@ main(){
 	FILE *fp=fopen("entradas.txt","w");
 	for(int x=0;x<25;x++){
 		amostra.especie='m'; //macas
-		amostra.peso=0.8+((float)rand()/(float)(RAND_MAX))/10.0; //valor entre .8 e .9
+		amostra.peso=0.082+((float)rand()/(float)(RAND_MAX))/1000.0; //valor entre 0.082 e 0.092
 		//fwrite(&amostra,sizeof(amostra),1,fp); //grava no arquivo
 		fprintf(fp,"%f %c\n",amostra.peso,amostra.especie); //grava no arquivo
 	}
